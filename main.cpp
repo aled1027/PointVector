@@ -10,8 +10,6 @@ int main(int argc, char *argv[]) {
     Vector v1(p0,p1);
     Vector v2(p1,p2);
 
-    auto x = p1.getPair();
-
     p1.print();
     cout << endl;
     p2.print();
