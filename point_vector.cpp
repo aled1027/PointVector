@@ -89,7 +89,7 @@ Point operator+(const Point lhs, const Vector rhs) {
     return Point(lhsP.first+=vEnd.first, lhsP.second+=vEnd.second);
 
 }
-bool operator==(Point lhs, Point rhs) {
+bool operator==(Point const lhs, Point const rhs) {
     std::pair<float,float> lhsPair = lhs.getPair();
     std::pair<float,float> rhsPair = rhs.getPair();
     if (lhsPair.first == rhsPair.first && lhsPair.second == rhsPair.second) {
